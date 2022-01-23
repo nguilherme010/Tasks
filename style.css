@@ -1,0 +1,412 @@
+body {
+    background-color: #e7e7e7;
+    max-width: 57%;
+    margin: auto;
+
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 21px;
+    margin: 21px;
+    width: 75%;
+    align-self: center;
+
+    position: 1000pt;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 10px rgb(190, 190, 190);
+    border-radius: 10px;
+}
+
+.createTask {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around left;
+    padding: 0px 0px 0px 20px;
+
+    position: static;
+    width: 80%;
+    height: 61px;
+    left: 65px;
+    top: 229px;
+
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 18px;
+
+    flex: none;
+    flex-grow: 0;
+    margin: 40px 0px;
+    overflow: visible;
+}
+
+#ellipseDivCreate {
+    display: none;
+    position: relative;
+    margin-right: 4%;
+}
+
+#taskleftDivCreate {
+    display: none;
+}
+
+#taskInput {
+    background-color: transparent;
+    border-width: 0;
+    width: 80%;
+    height: 100%;
+    font-size: 18px;
+    position: static;
+    padding: 0px;
+}
+
+#taskInput:focus {
+    outline: none !important;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position: static;
+    width: 100%;
+    height: 147px;
+
+    border: 1px solid #C0C0C0;
+    box-sizing: border-box;
+    border-radius: 18px;
+}
+
+.tasksBody {
+    width: 100%;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 0px 0px 20px;
+
+    position: static;
+    width: 100%;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+
+    border: 1px solid #D0D0D0;
+    box-sizing: border-box;
+    border-radius: 18px;
+    margin: 15px 0px;
+    justify-content: space-between;
+}
+
+.task:hover {
+    box-shadow: 0px 3px 0px #00000010;
+}
+.ellipseDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: static;
+    height: 60px;
+    left: 0px;
+    top: 0.5px;
+}
+
+.ellipseChosen {
+    position: static;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+
+    background: black;
+}
+
+.ellipseDropdown {
+    display: none;
+    margin-top: -3px;
+}
+
+.ellipseChosenCreate {
+    position: static;
+    border-radius: 15px;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+
+    background: #1252B0;
+}
+
+.ellipseBlue {
+    
+    position: absolute;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+    margin: 7px -35px;
+
+    background: #1252B0;
+}
+
+.ellipseBlueCreate {
+    
+    position: absolute;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+    margin: 7px -35px;
+
+    background: #1252B0;
+}
+
+.ellipseYellow {
+    
+    position: absolute;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+    margin: 7px -20px;
+    
+    background: #E0A817;
+}
+
+.ellipseYellowCreate {
+    
+    position: absolute;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+    margin: 7px -20px;
+    
+    background: #E0A817;
+}
+
+.ellipseRed {
+    
+    position: absolute;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+    margin: -6px -27.5px;
+
+    background: #BE0F0F;
+}
+
+.ellipseRedCreate {
+    
+    position: absolute;
+    border-radius: 20px;
+    width: 15px;
+    height: 15px;
+    left: 20px;
+    top: 20px;
+    margin: -6px -27.5px;
+
+    background: #BE0F0F;
+}
+
+.tasknameDiv {
+    position: static;
+    width: 80%;
+    height: 22px;
+    left: 65px;
+    top: 19.5px;
+    padding: 24px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+.taskleftDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around right;
+    align-items: center;
+
+    position: static;
+    left: 498px;
+    top: -5.5px;
+    margin: 0px 20px 0px 0px;
+}
+
+.lineDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: static;
+    width: 48px;
+    height: 72px;
+    left: 49px;
+    top: 0px;
+}
+
+.line {
+    
+    position: static;
+    width: 24px;
+    height: 1px;
+    min-width: 24px;
+
+    background-color: black;
+    transform: rotate(90deg);
+}
+
+.durationValue {
+    position: static;
+    width: 45px;
+    height: 21px;
+    left: 97px;
+    top: 25.5px;
+    margin: 5%;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+}
+
+#blue-line {
+    background-color: #1252B0;
+    height: 4px;
+    align-self: center;
+}
+
+#yellow-line {
+    background-color: #E0A817;
+    height: 4px;
+    align-self: center;
+}
+
+#red-line {
+    background-color: #BE0F0F;
+    height: 4px;
+    align-self: center;
+}
+
+#grey-line {
+    background-color: #727272;
+    height: 4px;
+    align-self: center;
+}
+
+
+#header-bottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 12px;
+    width: 50%;
+    justify-content: center;
+}
+
+#header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+
+    position: static;
+    width: 100%;
+    height: 41px;
+    left: 0px;
+    top: 0px;
+
+ 
+}
+
+#header-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+
+    position: static;
+    width: 500px;
+    height: 25pt;
+    left: 218px;
+    top: 54px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 155.56%;
+}
+
+#timeDiv {
+    position: static;
+    width: 329px;
+    height: 21px;
+    left: 339px;
+    top: 10px;
+    margin: 3px 14px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13.5pt;
+    line-height: 21px;
+    /* identical to box height */
+
+    text-align: right;
+
+    color: #000000;
+}
+
+#dateDiv{
+    
+    position: static;
+    width: 329px;
+    height: 21px;
+    left: 10px;
+    top: 10px;
+    margin: 3px 14px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.inputBoxes {
+    width: 50px;
+    border-width: 0px;
+    border-radius: 6%;
+    box-shadow: 0px 2px 3px #98afd1;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main-container">
+        <div id="header">
+            
+            <div id="header-top">
+                <div id="dateDiv"></div>
+                <div id="timeDiv"></div>
+            </div>
+            
+            <div id="header-center">9 tasks / 4h30 total</div>
+        
+            <div id="header-bottom">
+                <div id="blue-line"></div>
+                <div id="yellow-line"></div>
+                <div id="red-line"></div>
+                <div id="grey-line"></div>
+            </div>
+        </div>
+
+        <div  class="createTask" id="createTask" onclick="createInput();" >
+            <div class="ellipseDiv" id="ellipseDivCreate" onclick="ellipseClick();">
+                <div class="ellipseChosenCreate"></div>
+                <div class="ellipseDropdown" id="ellipseDropdown">
+                    <div class="ellipseBlueCreate" onclick="ellipseClickBlueCreate()"></div>
+                    <div class="ellipseYellowCreate" onclick="ellipseClickYellowCreate()"></div>
+                    <div class="ellipseRedCreate" onclick="ellipseClickRedCreate()"></div>
+                </div>
+            </div>
+            
+            <input name="taskInput" type="text" placeholder="Create a Task" id="taskInput" onblur="createBlur();"/>
+            <div  id="taskleftDivCreate" class="taskleftDiv">
+                <div class="line"></div>
+
+                <div class="durationDiv">
+                    <div class="durationValue">00:30</div>
+                </div>
+            </div>
+        
+        </div>
+        <div class="tasksBody">
+        </div>
+    </div>
+
+    <script src="MasterTasksArray-blank.js"></script>
+    <script src="cachesystem.js"></script>
+    <script src="./node_modules/animejs/lib/anime.min.js"></script>
+    <script type="text/javascript" src="date.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
