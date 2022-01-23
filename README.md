@@ -1,2 +1,2 @@
 # Tasks
-![](https://imgur.com/a/2Jawhbu)
+![](https://i.imgur.com/g81ejtK.gif)
